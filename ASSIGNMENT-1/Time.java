@@ -42,8 +42,8 @@ public class Time {
 	}
 	public static void main(String[] args)
 	{
-		Time t1=new Time(5,23,12);
-		Time t2=new Time(6,38,50);
+		Time t1=new Time(3,23,42);
+		Time t2=new Time(5,18,40);
 		Time t3=t1.add(t2);
 		t1.display("Time 1: ");
 		t2.display("Time 1: ");
