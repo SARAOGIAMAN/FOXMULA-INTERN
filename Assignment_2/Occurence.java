@@ -2,7 +2,7 @@ package com.foxmula.Assignment_2;
 
 import java.util.*;
 
-public class program5 {
+public class Occurence {
 	static ArrayList<Integer> al=new ArrayList<Integer>();
 	void add(int a, int b, int c, int d, int e, int f)
 	{
@@ -33,20 +33,20 @@ public class program5 {
 	}
 	public static void main(String[] args)
 	{
-		program5 p=new program5();
+		Occurence obj=new Occurence();
 		int a,b,c,d,e,f;
-		Scanner sc=new Scanner(System.in);
+		Scanner scanner=new Scanner(System.in);
 		System.out.println("Enter the value to add in a ArrayList ");
-		a=sc.nextInt();
-		b=sc.nextInt();
-		c=sc.nextInt();
-		d=sc.nextInt();
-		e=sc.nextInt();
-		f=sc.nextInt();
-		p.add(a, b, c, d, e, f);
+		a=scanner.nextInt();
+		b=scanner.nextInt();
+		c=scanner.nextInt();
+		d=scanner.nextInt();
+		e=scanner.nextInt();
+		f=scanner.nextInt();
+		obj.add(a, b, c, d, e, f);
 		System.out.println();
 		System.out.println(" ELEMENTS       FREQUENCY ");
-		p.occurance(al);
-		sc.close();
+		obj.occurance(al);
+		scanner.close();
 	}
 }
