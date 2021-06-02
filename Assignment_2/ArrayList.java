@@ -2,7 +2,7 @@ package com.foxmula.Assignment_2;
 
 import java.util.*;
 
-public class program1 {
+public class ArrayList {
 	ArrayList<Integer> al=new ArrayList<Integer>();
     void add(int a,int b,int c,int d,int e)
 	{
@@ -22,15 +22,15 @@ public class program1 {
 	}
 	public static void main(String[] args)
 	{
-		program1 p=new program1();
+		ArrayList p=new ArrayList();
 		int a,b,c,d,e;
-		Scanner sc=new Scanner(System.in);
+		Scanner scanner=new Scanner(System.in);
 		System.out.println("Enter the values to add in an ArrayList ");
-		a=sc.nextInt();
-		b=sc.nextInt();
-		c=sc.nextInt();
-		d=sc.nextInt();
-		e=sc.nextInt();
+		a=scanner.nextInt();
+		b=scanner.nextInt();
+		c=scanner.nextInt();
+		d=scanner.nextInt();
+		e=scanner.nextInt();
 		p.add(a, b, c, d, e);
 		System.out.println();
 		System.out.println("R   E   S   U   L   T ");
@@ -38,6 +38,6 @@ public class program1 {
 		System.out.println("ArrayList contains the given value ?     "+p.check(2));
 		System.out.println("ArrayList contains the given value ?     "+p.check(3));
 		System.out.println("ArrayList contains the given value ?     "+p.check(9));
-		sc.close();
+		scanner.close();
 	}
 }
