@@ -16,20 +16,20 @@ public class PairSum {
 	}
 	void find_pair(ArrayList<Integer> ar,int k)
 	{
-		int i=0,j=ar.size()-1;
-		while(i<j)
+		int low=0,high=ar.size()-1;
+		while(low<high)
 		{
-			if(ar.get(i)+ar.get(j)==k)
+			if(ar.get(low)+ar.get(high)==k)
 			{
-				System.out.println("PAIR "+ar.get(i)+" "+ar.get(j));
+				System.out.println("PAIR "+ar.get(low)+" "+ar.get(high));
 			}	
-			if(ar.get(i)+ar.get(j)>k) 
+			if(ar.get(low)+ar.get(high)>k) 
 			{
-                j--;
+                high--;
             }
             else 
             {
-                i++;
+                low++;
             }
 		}
 	}
