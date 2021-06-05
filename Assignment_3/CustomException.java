@@ -4,24 +4,17 @@ import java.util.*;
 
 public class CustomException 
 {
-	private void CheckPrimeOdd(int n)
+	private void CheckPrimeOdd(int n)throws InvalidPrimeOdd
 	{
-		try
-		{
 			if(isPrime(n)&&n%2==1)
 			{
-				throw new ArithmeticException("Number is Invalid");
+				throw new InvalidPrimeOdd("Number is Invalid");
 			}
 			else
 			{
 				System.out.println("No Exception Found");
 			}
 		}
-		catch(ArithmeticException e)
-		{
-			System.out.println(e);
-		}
-	}
 	public static boolean isPrime(int n) 
 	{  
 	       if(n<=1) 
@@ -43,7 +36,14 @@ public class CustomException
 		Scanner scanner=new Scanner(System.in);
 		System.out.println("Enter the number");
 		int n=scanner.nextInt();
-		obj.CheckPrimeOdd(n);
+		try
+		{
+			obj.CheckPrimeOdd(n);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
 		scanner.close();
 	}
 }
